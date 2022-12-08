@@ -2,7 +2,6 @@ TEST_FILE = "./test.txt"
 INPUT_FILE = "./input.txt"
 
 
-
 def part1(data):
     sizes = compute_elves_inventory(data)
     print(max(sizes))
@@ -14,8 +13,10 @@ def part2(data):
     print(top_three)
     return None
 
+
 def compute_elves_inventory(data):
     return [sum(x) for x in data]
+
 
 def parse_file(file):
     all_elves = []
@@ -28,7 +29,6 @@ def parse_file(file):
             current_elf.append(int(x))
     all_elves.append(current_elf)
     return all_elves
-
 
 
 def test1(file, expected):
@@ -51,4 +51,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
