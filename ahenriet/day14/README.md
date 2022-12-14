@@ -1,4 +1,4 @@
-#Graphical solution
+# Graphical solution
 
 ## Part 1
 ![](https://github.com/aoc-ptctech/allinone2022/blob/main/ahenriet/day14/mygif-part1.gif?raw=true)
