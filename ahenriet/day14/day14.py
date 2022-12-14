@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import imageio as imageio
 import numpy as np
 
-GIF=500
+GIF=False
 INLINEDRAW=False
 EXT="png"
 
@@ -137,7 +137,6 @@ def part2(filename):
     return result
 
 def test(demo_file):
-    pass
     assert part1(demo_file) == 24
     assert part2(demo_file) == 93
 
