@@ -1,14 +1,14 @@
 import { readLinesFromFile } from '../../common/fileUtil'
 import { part$$PART$$ } from './part'
 
-describe('Day $$DAY$$ test', () => {
+describe('Day $$DAY$$ part $$PART$$ test', () => {
   it('should work with example data', () => {
     // Arrange
     const expectedAnswer = parseInt(
-      readLinesFromFile('assets/day$$DAY$$/part$$PART$$/example-answer.txt')[0]
+      readLinesFromFile('assets/day$$DAY$$/example-answer-part$$PART$$.txt')[0]
     )
     // Act
-    const value = part$$PART$$('assets/day$$DAY$$/part$$PART$$/example.txt')
+    const value = part$$PART$$('assets/day$$DAY$$/example.txt')
     // Assert
     expect(value).toEqual(expectedAnswer)
   })

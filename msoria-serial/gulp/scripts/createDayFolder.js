@@ -17,7 +17,8 @@ function touchFile(path) {
 
 function createAssetFiles(path) {
   touchFile(path + '/example.txt')
-  touchFile(path + '/example-answer.txt')
+  touchFile(path + '/example-answer-part1.txt')
+  touchFile(path + '/example-answer-part2.txt')
   touchFile(path + '/input.txt')
 }
 
@@ -25,25 +26,7 @@ function createAssetFolder(path) {
   if (!createFolder(path)) {
     return false
   }
-  const assetPart1Folder = path + '/part1'
-  const assetPart2Folder = path + '/part2'
-  if (createFolder(assetPart1Folder)) {
-    createAssetFiles(assetPart1Folder)
-  }
-  if (createFolder(assetPart2Folder)) {
-    createAssetFiles(assetPart2Folder)
-  }
-  return true
-}
-
-function createSrcFolder(path) {
-  if (!createFolder(path)) {
-    return false
-  }
-  const part1Folder = path + '/part1'
-  const part2Folder = path + '/part2'
-  createFolder(part1Folder)
-  createFolder(part2Folder)
+  createAssetFiles(path)
   return true
 }
 
@@ -56,7 +39,7 @@ function createDayFolder(day) {
   }
 
   createAssetFolder(assetFolder)
-  createSrcFolder(srcFolder)
+  createFolder(srcFolder)
 
   return true
 }

@@ -10,10 +10,6 @@ function editPackageScripts(day) {
         value: 'ts-node src/day' + day + '/index.ts'
       })
     )
-    .pipe(gulp.dest('./'))
-
-  gulp
-    .src('package.json')
     .pipe(
       jsonModify({
         key: 'scripts.test',
