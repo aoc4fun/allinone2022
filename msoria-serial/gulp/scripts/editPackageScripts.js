@@ -13,7 +13,7 @@ function editPackageScripts(day) {
     .pipe(
       jsonModify({
         key: 'scripts.test',
-        value: 'jest src/day' + day + '/**/*.spec.ts'
+        value: 'jest src/day' + day + '/.*.spec.ts'
       })
     )
     .pipe(gulp.dest('./'))
